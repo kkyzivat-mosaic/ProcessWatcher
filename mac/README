@@ -1,0 +1,7 @@
+This is some code to allow Java code to monitor Mac processes natively via JNI
+
+It registers with NSNotificationCenter as an observer for process events:
+NSWorkspaceDidLaunchApplicationNotification
+NSWorkspaceDidTerminateApplicationNotification
+
+and fires off callbacks to Java when Lightroom processes are detected as starting or stopping.
